@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gerenciador de vacinas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="container-imagem">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Vacina</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="imunizantes.html">Imunizantes</a></li>
+                <li><a href="pessoas.html">Pessoas</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+
+        <div class="container">
+            <div id="jumbo-imagem" class="jumbotron">
+                <h1>Imunizantes</h1>
+                <p>Pesquise as empresas imunizantes e verifique suas distribuições</p>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <select name="select">
+  <option value="valor1">Código</option>
+  <option value="valor2" selected>Nome</option>
+  <option value="valor3">Cidade/estado</option>
+</select>
+            <button type="button" class="btn btn-outline-primary">Busca</button>
+            <a href="imunizantesCadastro.html"><button type="button" class="btn btn-outline-primary">Novo registro</button></a>
+        </div>
+
+
+    </div>
+
+    <div id="caixa_tabela">
+        <table class="tab_dados">
+            <tr>
+                <th style="width: 30px;"></th>
+                <th>CÓDIGO</th>
+                <th>NOME</th>
+                <th>CIDADE</th>
+                <th>BAIRRO</th>
+                <th>QUANTIDADE DISTRIBUÍDA</th>
+            </tr>
+            <tr id='2'>
+                <td>&nbsp;</td>
+                <td>1</td>
+                <td>HOSPITAL X</td>
+                <td>BOA ESPERANÇA</td>
+                <td>MG</td>
+                <td>45</td>
+            </tr>
+            <tr id='3'>
+                <td>&nbsp;</td>
+                <td>2</td>
+                <td>HOSPITAL Y</td>
+                <td>SÃO PAULO</td>
+                <td>SP</td>
+                <td>1202</td>
+            </tr>
+            <tr id='4'>
+                <td>&nbsp;</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr id='5'>
+                <td>&nbsp;</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<style type="text/css">
+    body {
+        margin: 0;
+    }
+    
+    #container-imagem {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        /* adicionando imagem de fundo */
+        background: url('jumbo.jpg');
+        background-size: cover;
+    }
+    
+    #caixa_tabela {
+        width: 150%;
+        /* aqui pode ser auto ou 100%*/
+        overflow-x: auto;
+    }
+    
+    .tab_dados {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    .tab_dados a {
+        color: #484848;
+        text-decoration: none;
+    }
+    
+    .tab_dados th {
+        background: #0091FF;
+        color: #FFFFFF;
+        font-style: italic;
+    }
+    
+    .tab_dados tr {
+        height: 50px;
+        border-bottom: 1px solid #D5D5D5;
+    }
+    
+    .tab_dados tr:nth-child(odd) {
+        background: #F7F7F7;
+    }
+    
+    .tab_dados tr:nth-child(even) {
+        background: #FFFFFF;
+    }
+    
+    .tab_dados tr:hover {
+        background: #F1F1F1;
+    }
+    
+    tfoot tr td {
+        border: 0;
+        height: 40px;
+    }
+    
+    .tfoot {
+        width: 100%;
+    }
+</style>
+
+</html>

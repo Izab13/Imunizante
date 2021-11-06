@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gerenciador de vacinas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="container-imagem">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h1 style="color: white">Novo Registro de Pessoa</h1>
+            </div>
+    </nav>
+
+    <div>
+
+        <form>
+            <div class="form-group">
+                <label style="color: white " for="InputNome">Nome</label>
+                <input type="nome" class="form-control" id="nome" aria-describedby="nomeHelp" placeholder="nome">
+            </div>
+            <div class="form-group">
+                <label style="color: white " for="InputCidade">Cidade</label>
+                <input type="cidade" class="form-control" id="exampleInputCidade" placeholder="Cidade">
+            </div>
+            <div class="form-group">
+                <label style="color: white " for="InputBairro">Bairro</label>
+                <input type="bairro" class="form-control" id="exampleInputBairro" placeholder="Bairro">
+            </div>
+            <div class="form-group">
+                <label style="color: white " for="InputDose">Número da dose</label>
+                <input type="dose" class="form-control" id="exampleInputDose" placeholder="Dose">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+    </div>
+</body>
+<style type="text/css">
+    body {
+        margin: 0;
+    }
+    
+    #container-imagem {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        /* adicionando imagem de fundo */
+        background: url('jumbo.jpg');
+        background-size: cover;
+    }
+</style>
+
+</html>
